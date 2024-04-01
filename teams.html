@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Header section from the first HTML code snippet -->
+    <style>
+        body, h1, h3, p, ul, li {
+            margin: 20;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white; /* Changing background color to white */
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0; /* Add padding to the container */
+        }  
+
+        header {
+            background: #9ad5f5; /* Changing top color to very light blue */
+            padding: 10px 0; /* Adding padding for better spacing */
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .logo {
+            display: inline-block; /* Display the logo as inline block */
+            margin-right: 20px; /* Add margin to the right to move it to the left */
+        }
+
+        .logo img {
+            width: 110px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav {
+            display: inline-block; /* Display the navigation as inline block */
+            font-size: 12px; /* Make font size smaller */
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex; /* Display menu items as flex */
+        }
+
+        nav li {
+            margin-left: 20px; /* Adjust the margin between menu items */
+            padding-top: 23px;
+            position: relative;
+        }
+
+        nav a {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            position: relative;
+            padding: 0 10px; /* Add padding to the menu items */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="c:\Users\faaiz\Downloads\Weblogo.png" alt="Your Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="user_profile.html">User profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Rest of your User Profile page content goes here -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <style>
+        /* Add your CSS styles here */
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .thumbnail {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+        .extended-view {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .thumbnail-container:hover .extended-view {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Team Details</h1> 
+        <p>About Us - Hover over the images for details!</p>
+    <div class="thumbnail-container">
+ 
+  
+        <!-- Thumbnail for Team Member 1 -->
+        <div class="thumbnail">
+            <img src="c:\Users\faaiz\Downloads\Stirling.jpg" alt="Team Member 1" width="200" height="200">
+            <div class="extended-view">
+                <h2>Stirling Idle</h2>
+                <p>Role: Splash Screen | Shop </p>
+                <p>Tasks: Stirling's tasks are to create a splash screen that represents an introduction to the site and a shop page that allows customers to shop online.  </p>
+            </div>
+        </div>
+        <!-- Thumbnail for Team Member 2 -->
+        <div class="thumbnail">
+            <img src="c:\Users\faaiz\Downloads\Lamia.jpg" alt="Team Member 2" width="200" height="200">
+            <div class="extended-view">
+                <h2>Lamia Haque</h2>
+                <p>Role: Home Page | Website Template | Navigation Bar</p>
+                <p>Tasks: Lamia's tasks are to create a home page, website template and naviagtion bar that allows clients to click on other sections of the website. She is also responsible for clients to leave feedbacks. </p>
+            </div>
+        </div>
+        <!-- Thumbnail for Team Member 3 -->
+        <div class="thumbnail">
+            <img src="c:\Users\faaiz\Downloads\Faaizah.jpg" alt="Team Member 3" width="200" height="200">
+            <div class="extended-view">
+                <h2>Faaizah Ahmed</h2>
+                <p>Role: User Profile | Teams </p>
+                <p>Tasks: Faaizah's tasks are to create a user page for clients to give their information and allow her to ask questions too. She is also responsible for the teams page which shows what role each team members have been given.</p>
+            </div>
+        </div>
+         <!-- Thumbnail for Team Member 4 -->
+         <div class="thumbnail">
+            <img src="c:\Users\faaiz\Downloads\Amani.jpg" alt="Team Member 4" width="200" height="200">
+            <div class="extended-view">
+                <h2>Amani Rifaz</h2>
+                <p>Role: Gallery | Sitemap </p>
+                <p>Tasks: Amani's tasks are to create a gallery page that shows images and content which is related to our website's theme. She is also responsible for creating a sitemap that outlines the website's page,contents etc...</p>
+            </div>
+        
+   
+</body>
+</html>
+</body>
+</html>

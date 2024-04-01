@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Header section from the first HTML code snippet -->
+    <style>
+        body, h1, h3, p, ul, li {
+            margin: 20;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white; /* Changing background color to white */
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0; /* Add padding to the container */
+        }  
+
+        header {
+            background: #9ad5f5; /* Changing top color to very light blue */
+            padding: 10px 0; /* Adding padding for better spacing */
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .logo {
+            display: inline-block; /* Display the logo as inline block */
+            margin-right: 20px; /* Add margin to the right to move it to the left */
+        }
+
+        .logo img {
+            width: 110px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav {
+            display: inline-block; /* Display the navigation as inline block */
+            font-size: 12px; /* Make font size smaller */
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex; /* Display menu items as flex */
+        }
+
+        nav li {
+            margin-left: 20px; /* Adjust the margin between menu items */
+            padding-top: 23px;
+            position: relative;
+        }
+
+        nav a {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            position: relative;
+            padding: 0 10px; /* Add padding to the menu items */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="c:\Users\faaiz\Downloads\Weblogo.png" alt="Your Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="user_profile.html">User profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Rest of your User Profile page content goes here -->
+    <!DOCTYPE html>
+
+    <html lang="en">
+    
+    <head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Page Editor - Faaizah Ahmed</title>
+    
+    <style>
+    
+    body {
+    
+      font-family: Arial, sans-serif;
+    
+      background-color: #bfe4f6;
+    
+    }
+    
+     
+    
+    header {
+    
+      background-color: #85d0fc;
+    
+      color: #010247;
+    
+      text-align: center;
+    
+      padding: 10px 0;
+    
+    }
+    
+     
+    
+    h1 {
+    
+      margin: 0;
+    
+    }
+    
+     
+    
+    .container {
+    
+      max-width: 800px;
+    
+      margin: 0 auto;
+    
+      padding: 20px;
+    
+    }
+    
+     
+    
+    .completed-tasks {
+    
+      background-color: #fff;
+    
+      border-radius: 5px;
+    
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+      margin-top: 20px;
+    
+    }
+    
+     
+    
+    .completed-tasks h2 {
+    
+      color: #333;
+    
+      border-bottom: 1px solid #ccc;
+    
+      padding-bottom: 10px;
+    
+      margin-bottom: 20px;
+    
+    }
+    
+     
+    
+    .completed-tasks ul {
+    
+      list-style: none;
+    
+      padding: 0;
+    
+    }
+    
+     
+    
+    .completed-tasks li {
+    
+      padding: 10px 0;
+    
+      border-bottom: 1px solid #ccc;
+    
+    }
+    
+     
+    
+    .completed-tasks li:last-child {
+    
+      border-bottom: none;
+    
+    }
+    
+     
+    
+    .file-links p {
+    
+      margin-top: 20px;
+    
+    }
+    
+     
+    
+    .file-links ul {
+    
+      list-style: none;
+    
+      padding: 0;
+    
+    }
+    
+     
+    
+    .file-links li {
+    
+      display: inline;
+    
+      margin-right: 10px;
+    
+    }
+    
+     
+    
+    .file-links li:last-child {
+    
+      margin-right: 0;
+    
+    }
+    
+     
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        <header>
+    
+          <h1>Page Editor</h1>
+    
+        </header>
+    
+        <main>
+    
+          <section class="editor-info">
+    
+            <div class="container">
+    
+              <h2>Faaizah Ahmed</h2>
+    
+              <p><strong>Role:</strong> Student 3</p>
+    
+            </div>
+    
+          </section>
+    
+          <section class="completed-tasks">
+    
+            <div class="container">
+    
+              <h2>List of Completed Tasks:</h2>
+    
+              <ul>
+    
+                <li><strong>Create User Profile:</strong> Build a user profile asking users a series of prompts to collect their information gradually and providing feedback.  (File: <a href="profile.html" target="_blank">profile.html</a>)</li>
+    
+                <li><strong>Create Teams Page</strong> Create a team page enabling the users to know information about the team members. Insert images of the team members and write down their roles. (File: <a href="teams.html" target="_blank">teams.html</a>)</li>
+    
+                <li><strong>Create the Content Page:</strong> Develop an additional content page related to the website's theme/topic. Ensure sufficient length for internal linking within the content. Include a "Go to top" button for easy navigation. (File: <a href="content_ST3.html" target="_blank">content_ST3.html</a>)</li>
+    
+                <li><strong>Create Your Page Editor:</strong> Develop a separate page featuring your name, role, and list of completed tasks. Ensure there's a link to the Page Editor from all pages you've created. (File: <a href="pageEditor _ST2.html" target="_blank">page_editor.html</a>)</li>
+    
+                <li><strong>Linking All Files to Homepage:</strong> Ensure all pages are linked appropriately to the homepage to verify functionality. (Files: <a href="profile.html" target="_blank">profile.html</a>, <a href="teams.html" target="_blank">teams.html</a>, <a href="content_ST3.html" target="_blank">content_ST3.html</a>, <a href="pageEditor _ST3.html" target="_blank">pageEditor_ST3.html</a>)</li>
+    
+              </ul>
+    
+            </div>
+    
+          </section>
+    
+          <section class="back-links">
+    
+            <div class="container">
+    
+              <p>Back to <a href="profile.html" target="_blank">User Profile Page</a> | <a href="teams.html" target="_blank">Teams Page</a> | <a href="content_ST3.html" target="_blank">Content Page</a></p>
+    
+            </div>
+    
+          </section>
+    
+        </main>
+    
+      </body>
+    
+      </html>
+</body>
+</html>

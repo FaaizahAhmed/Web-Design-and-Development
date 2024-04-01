@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Header section from the first HTML code snippet -->
+    <style>
+        body, h1, h3, p, ul, li {
+            margin: 20;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white; /* Changing background color to white */
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0; /* Add padding to the container */
+        }  
+
+        header {
+            background: #9ad5f5; /* Changing top color to very light blue */
+            padding: 10px 0; /* Adding padding for better spacing */
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .logo {
+            display: inline-block; /* Display the logo as inline block */
+            margin-right: 20px; /* Add margin to the right to move it to the left */
+        }
+
+        .logo img {
+            width: 110px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav {
+            display: inline-block; /* Display the navigation as inline block */
+            font-size: 12px; /* Make font size smaller */
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex; /* Display menu items as flex */
+        }
+
+        nav li {
+            margin-left: 20px; /* Adjust the margin between menu items */
+            padding-top: 23px;
+            position: relative;
+        }
+
+        nav a {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            position: relative;
+            padding: 0 10px; /* Add padding to the menu items */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="c:\Users\faaiz\Downloads\Weblogo.png" alt="Your Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="user_profile.html">User profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Rest of your User Profile page content goes here -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="progress-bar">
+            <div class="progress" style="width: 0%;"></div>
+        </div>
+        <form id="user-profile-form">
+            <!-- Step 1: Personal Details -->
+            <fieldset id="step1">
+                <legend>Step 1: Personal Details</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="age" id="age" name="age">
+                </p>
+                <p>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="Please select an option">Please select an option</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </p>
+                   <!-- Buttons for navigation -->
+   <button id="prev-btn">Previous</button>
+   <button id="next-btn">Next</button>
+   <button id="submit-btn">Submit</button>
+            </fieldset>
+
+<!-- HTML structure for the profile building interface -->
+<div id="profile-form">
+   <!-- Profile prompts -->
+   <div class="step" id="step-1">
+       <!-- Prompts for step 1 -->
+   </div>
+   <div class="step" id="step-2">
+       <!-- Prompts for step 2 -->
+   </div>
+   <!-- Progress indicator -->
+   <div id="progress-bar"></div>
+</div>
+
+
+<form>
+    <fieldset>
+      <legend>Step 2: Volunteering tasks</legend>
+      <p>What brings you to this cause?</p>
+      <textarea name="cause" rows="4" cols="50"></textarea>
+      <br>
+      <p>When can you start?</p>
+      <input type="date" name="startDate">
+      <br>
+      <p>What location would you prefer?</p>
+      <input type="text" name="location" placeholder="e.g. London, NYC, etc.">
+      <br>
+        <!-- Add more options as needed -->
+      </select>
+      <!-- Add more fields for additional tasks as needed -->
+      <br>
+      <button type="submit">Next</button>
+    </fieldset>
+
+<form>
+    <fieldset id="step3">
+        <legend>Step 3: Availability and Contact</legend>
+        <p>
+            <label for="availability">Availability</label>
+            <!-- Use radio buttons, a dropdown, or a date range picker for availability -->
+        </p>
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </p>
+        <!-- Buttons for navigation -->
+    <button type="button" id="prev-btn">Previous</button>
+    <button type="button" id="next-btn">Next</button>
+    <button type="submit">Submit</button>
+</fieldset>
+</body>
+</html>
